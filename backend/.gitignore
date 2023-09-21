@@ -1,0 +1,79 @@
+#####################################
+# .gitignore File
+# Purpose: Specifies files and directories
+# that are intentionally untracked and should
+# be ignored by Git.
+#####################################
+
+# ==================================
+# OS generated files
+# ==================================
+*.DS_Store               # macOS desktop services store
+*.DS_Store?              # Additional macOS desktop services store
+Thumbs.db                # Windows thumbnail cache files
+.DS_Store                # Files that might appear on external disks
+Desktop.ini              # Windows icon cache file
+*.swp                    # Swap file for Vim
+*.swo                    # Swap file for Vim
+*~                       # Temporary files
+
+# ==================================
+# Node.js specific
+# ==================================
+node_modules/            # Node.js dependency folder
+npm-debug.log            # npm debug log
+yarn-debug.log*          # Yarn debug log
+yarn-error.log*          # Yarn error log
+package-lock.json        # npm package-lock
+yarn.lock                # Yarn lock file
+
+# ==================================
+# Environment & Config
+# ==================================
+.env                     # Environment variables
+.env.local               # Local environment variables
+.env.*.local             # Other local env files
+config/config.js         # Generic config file (replace with your actual config files)
+
+# ==================================
+# Logs and Databases
+# ==================================
+*.log                    # Log files
+*.sql                    # SQL database dumps
+*.sqlite                 # SQLite database file
+
+# ==================================
+# Build and Distribution
+# ==================================
+/dist                    # Distribution folder
+/build                   # Build folder
+/.cache                  # Cache folder (used by many tools)
+.next/                   # Next.js build output
+
+# ==================================
+# Editors & IDEs
+# ==================================
+.idea/                   # JetBrains IDE
+.vscode/                 # Visual Studio Code settings
+*.sublime-project        # Sublime Text project settings
+*.sublime-workspace      # Sublime Text workspace settings
+*.code-workspace         # VS Code directory settings
+
+# ==================================
+# Miscellaneous
+# ==================================
+*.suo                    # Microsoft Visual Studio solution file
+*.ntvscc                 # Microsoft Visual Studio folder
+*.class                  # Compiled class files for Java
+*.tgz                    # Tarball files
+*.gz                     # Gzip files
+
+# ==================================
+# Other Files & Folders
+# ==================================
+/temp/                   # Temporary folders
+/.tmp/                   # Temporary folders
+.DS_Store                # Files that might appear on external disks
+*.bak                    # Backup files
+*.swp                    # vim swap files
+*.swo                    # vim swap files
