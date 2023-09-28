@@ -21,6 +21,10 @@ const identity = {
 }
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", "SQL", "Python", "Java", "C++", "C#", "Git", "GitHub", "VS Code", "Linux", "Windows"]
+
+const happy = true
+const finished = false
+const goal = 3
 ---
 <html lang="en">
 	<head>
@@ -45,6 +49,9 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", "SQL
       <h2>{header}</h2>
       <p>{identity.paragraphs[index]}</p>
     ))}
+    {happy ? <p>I am happy to be learning Astro!</p> : <p>I am not happy to be learning Astro.</p>}
+    {finished ? <p>I finished this tutorial!</p> : <p>I have not finished this tutorial.</p>}
+    {goal === 3 ? <p>my goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
     <h1>Contact Me</h1>
       <p>{identity.contactInfo.address}</p>
       <p>{identity.contactInfo.email}</p>
