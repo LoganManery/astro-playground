@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/navigation.astro'
+
 const pageTitle = 'About Me'
 
 const identity = {
@@ -35,14 +37,8 @@ const goal = 3
 		<title>Astro</title>
     <title>{pageTitle}</title>
 	</head>
-	<body class="flex">
-    <nav class="flex">
-      <ul class="flex flex-row">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
-    </nav>
+	<body>
+    <Navigation />
     <h1>{identity.Name}</h1>
     {
     identity.headers.map((header, index) => (
