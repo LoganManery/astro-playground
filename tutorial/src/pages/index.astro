@@ -7,16 +7,20 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<title>Astro</title>
 	</head>
-	<body>
-    <nav>
-      <ul>
+	<body class="bg-base font-roboto font-extrabold">
+    <nav class="flex w-screen justify-end bg-primaryrr">
+      <ul class="flex gap-4 justify-end w-1/2 font-extrabold font-roboto">
         <li><a href="/">Home</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/blog/">Blog</a></li>
+        <br />
       </ul>
     </nav>
-    <h1>Home</h1>
+    
 	</body>
 </html>
