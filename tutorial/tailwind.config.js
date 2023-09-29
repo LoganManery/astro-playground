@@ -11,6 +11,7 @@ export default {
     colors: {
       white: '#FFFFFF',
       black: '#000000',
+      grey: '#F3F4F6',
       one: '#EAAC57',
       two: '#2B359E',
       three: '#63EBD6',
