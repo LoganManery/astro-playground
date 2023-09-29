@@ -9,6 +9,8 @@ export default {
       xl: '1440px',
     },
     colors: {
+      white: '#FFFFFF',
+      black: '#000000',
       one: '#EAAC57',
       two: '#2B359E',
       three: '#63EBD6',

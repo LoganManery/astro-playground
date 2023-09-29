@@ -1,6 +1,7 @@
 ---
-import Navigation from '../components/navigation.astro'
-import Footer from '../components/footer.astro'
+import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 
 const pageTitle = 'About Me'
 
@@ -38,8 +39,8 @@ const goal = 3
 		<title>Astro</title>
     <title>{pageTitle}</title>
 	</head>
-	<body class="flex flex-col ">
-    <Navigation />
+	<body class="flex flex-col bg-one">
+    <Header />
     <h1>{identity.Name}</h1>
     {
     identity.headers.map((header, index) => (
@@ -52,6 +53,9 @@ const goal = 3
     <h1>Contact Me</h1>
       <p>{identity.contactInfo.address}</p>
       <p>{identity.contactInfo.email}</p>
-  <Footer />
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
 	</body>
 </html>

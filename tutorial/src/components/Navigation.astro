@@ -1,12 +1,7 @@
 ---
+import Hamburger from '../components/Hamburger.astro'
 ---
-<nav class="flex w-screen bg-four items-center">
-  <img class="m-2 w-10 rounded-full" src="cubism-person-computer.png"/>
-  <h1 class="justify-start font-extrabold font-playfair text-2xl w-1/4">Thought Canvas</h1>
-  <ul class="flex gap-4 justify-end w-screen font-extrabold font-roboto">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about/">About</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <br />
-  </ul>
+<nav class="flex bg-two lg:p-2">
+  <h1 class="justify-start m-auto pl-2 text-white w-1/2 lg:text-2xl">Thought Canvas</h1>
+  <Hamburger />
 </nav>
