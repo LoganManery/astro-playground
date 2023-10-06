@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-const allPosts = await Astro.glob('../pages/posts/*.md');
-const pageTitle = "My Astro Learning Blog";
+const allPosts = await Astro.glob('../pages/posts/*.mdx');
+const pageTitle = "Thoughts";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <p>This is where I will post about my journey learning Astro.</p>
-  <ul>
-    {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+  <h1 class="font-pixelify text-2xl">This is where I post my thoughts</h1>
+  <ul class="font-pixelify text-left w-1/2 ">
+    {allPosts.map((post) => <li><a class="text-xl hover:text-three" href={post.url}>{post.frontmatter.title}</a></li>)}
   </ul>
 </BaseLayout>

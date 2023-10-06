@@ -2,8 +2,13 @@
 import Hamburger from './Hamburger.astro'
 import ThemeIcon from './ThemeIcon.astro';
 ---
-<nav class="flex bg-two p-2">
+<nav class="bg-ed flex p-2">
   <ThemeIcon />
-  <h1 class="justify-start m-auto pl-2 text-white w-1/2 lg:text-2xl">Thought Canvas</h1>
+  <h1 class="justify-start font-pixelify m-auto pl-2 text-white w-1/2 text-lg lg:text-xl">Thought Canvas</h1>
   <Hamburger />
 </nav>
+<style>
+  .dark .header {
+    background-color: coral;
+  }
+</style>

@@ -3,10 +3,29 @@
 @tailwind utilities;
 
 html.dark {
-  background-color: #0d0950;
+  background-color: #806558;
   color: #fff;
+}
+
+html {
+  background-color: #FAC6AC;
+  color: #000;
 }
 
 .dark .nav-links a {
   color: #fff;
 }
+
+.dark .nav-links a:hover {
+  color: #FAC6AC;
+}
+
+.dark .github {
+  color: #FFE3A3;
+}
+
+.github {
+  color: #966760;
+}
+
+

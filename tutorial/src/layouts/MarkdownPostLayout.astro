@@ -1,24 +1,50 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import title2 from '../pages/posts/about-me.mdx';
+
 const { frontmatter } = Astro.props;
-const allPosts = await Astro.glob("/*.md");
+const allPosts = await Astro.glob("../pages/posts/*.mdx");
 const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-  <p><em>{frontmatter.description}</em></p>
-  <p>{frontmatter.pubDate.slice(0,10)}</p>
-
-  <p>Written by: {frontmatter.author}</p>
-
+  <div class="font-pixelify text-xl">
+    <p><em>{frontmatter.description}</em></p>
+    <p>{frontmatter.pubDate.slice(0,10)}</p>
+    <p>Written by: {frontmatter.author}</p>
+  </div>
   <div class="tags">
     {frontmatter.tags.map((tag: any) => (
       <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
     ))}
   </div>
-
-  <slot />
+  <div class="mdx-content flex flex-col font-pixelify gap-2 text-left">
+    <slot />
+  </div>
 </BaseLayout>
+
 <style>
+  .mdx-content :global(h1) {
+    font-size: 2.0em;
+    font-weight: 700;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+
+  .mdx-content :global(p) {
+    font-size: 1.15em;
+    line-height: 1.5em;
+    margin: 0.5em 0;
+  }
+
+  .mdx-content :global(img) {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 100%;
+    display: block;
+    border: solid 4px #FFFFFF;
+  }
+  
   a {
     color: #00539F;
   }

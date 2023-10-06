@@ -10,10 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^1.1.1",
     "@astrojs/preact": "^3.0.0",
+    "@astrojs/prism": "^3.0.0",
     "@astrojs/react": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
     "astro": "^3.0.6",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.30",

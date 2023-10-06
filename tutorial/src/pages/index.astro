@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting.jsx";
+import { Image } from 'astro:assets';
+import { Prism } from "@astrojs/prism"
 
-const pageTitle = "Home Page";
+const pageTitle = "Thought Canvas";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My Awesome Blog</h2>
-  <Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} />
-  <Greeting client:load messages={['Hej', "Hallo", "Hola", "Habari"]} />
+  <Image class="rounded-full" src="/cubism-person-computer.png" alt="random picture for veiwing" width="400" height="400"/>
+  <Greeting client:load messages={['Hello', 'Hej', "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
