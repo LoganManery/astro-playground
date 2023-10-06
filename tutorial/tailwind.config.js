@@ -3,6 +3,7 @@ export default {
   content: ["./src/**/*.astro"],
   theme: {
     screens: {
+      xs: '280px',
       sm: '480px',
       md: '768px',
       lg: '976px',
