@@ -27,6 +27,7 @@ export default {
       cd:'#806558',
       dd:'#966760',
       ed:'#96727D',
+      headers: '#FAA2F9',
     },
     fontFamily: {
       sans: ['Inter var', 'sans-serif'],
