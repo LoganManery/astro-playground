@@ -1,8 +1,5 @@
 --- 
 import BaseLayout from '../layouts/BaseLayout.astro'
-import Navigation from '../components/Navigation.astro'
-import Footer from '../components/Footer.astro'
-import Header from '../components/Header.astro'
 
 const pageTitle = 'Contact Me'
 
@@ -20,8 +17,8 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", "SQL", "Python", "Java", "C++", "C#", "Git", "GitHub", "VS Code", "Linux", "Windows"]
 ---
 <BaseLayout>
-  <div class="font-pixelify text-2xl text-center border-2 p-5 rounded-xl shadow-2xl lg:w-1/2 sm:w-10/12 xs:w-10/12">
-    <h1 class="text-4xl">{pageTitle}</h1>
+  <div class="box-content font-pixelify text-center border-2 p-5 rounded-xl shadow-2xl lg:w-1/2 sm:w-8/12 xs:w-8/12 lg:text-2xl sm:text-xl">
+    <h1 class="lg:text-4xl sm:text-2xl xs:text-xl">{pageTitle}</h1>
     <h1>{identity.Name}</h1>
     <p>{identity.contactInfo.address}</p>
     <p>{identity.contactInfo.email}</p>
