@@ -6,7 +6,7 @@ const allPosts = await Astro.glob("../pages/posts/*.mdx");
 const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-  <div class="flex flex-col border-2 w-9/12 sm:w-11/12 p-10 rounded-xl">
+  <div class="flex flex-col border-2 w-9/12 sm:w-full p-10 rounded-xl">
     <div class="font-pixelify text-xl m-auto text-center">
       <p><em>{frontmatter.description}</em></p>
       <p>{frontmatter.pubDate.slice(0,10)}</p>
