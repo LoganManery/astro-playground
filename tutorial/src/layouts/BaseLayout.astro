@@ -2,8 +2,10 @@
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import '../styles/global.css'
+import { ViewTransitions } from 'astro:transitions';
 
 const { pageTitle } = Astro.props;
+
 ---
 
 <html lang="en">
@@ -18,9 +20,10 @@ const { pageTitle } = Astro.props;
     <link rel="stylesheet" href="/src/styles/global.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <ViewTransitions />
     <title>{pageTitle}</title>
   </head>
-  <body class="flex flex-col">
+  <body class="flex flex-col" transition:animate="slide" >
     <Header />
     <h1 class="font-pixelify text-6xl sm:text-4xl xs:text-4xl m-auto text-headers">{pageTitle}</h1>
     <div class="flex flex-col gap-10 m-auto items-center w-11/12 rounded-lg p-10">
