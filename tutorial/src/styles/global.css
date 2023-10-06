@@ -12,15 +12,15 @@ html {
   color: #000;
 }
 
-:root {
+/* :root {
   background-color: #FAC6AC;
   color: #000;
-}
+} */
 
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   background-color: #806558;
   color: #fff;
-}
+} */
 
 .dark .nav-links a {
   color: #fff;
@@ -30,7 +30,7 @@ html {
   color: #FAC6AC;
 }
 
-[data-theme='dark'] .github {
+.dark .github {
   color: #FFE3A3;
 }
 
