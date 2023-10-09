@@ -29,6 +29,10 @@ export default {
       dd:'#966760',
       ed:'#96727D',
       headers: '#FAA2F9',
+      retroprimary: '#B9FFF8',
+      retrosecondary: '#6FEDD6',
+      retrotertiary: '#FF9551',
+      retroquaternary: '#FF4A4A',
     },
     fontFamily: {
       sans: ['Inter var', 'sans-serif'],
