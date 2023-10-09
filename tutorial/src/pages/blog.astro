@@ -8,7 +8,7 @@ const pageTitle = "Thoughts";
     <h1 class="font-pixelify text-2xl text-center">This is where I post my thoughts</h1>
     <br />
     <ul class="font-pixelify text-left w-1/2 m-auto">
-      {allPosts.map((post) => <li class="p-2"><a class="text-xl hover:text-three" href={post.url}>{post.frontmatter.title}</a></li>)}
+      {allPosts.map((post) => <li class="p-2"><a class="text-xl hover:text-headers" href={post.url}>{post.frontmatter.title}</a></li>)}
     </ul>
   </div>
 </BaseLayout>
